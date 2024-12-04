@@ -1,0 +1,54 @@
+
+.header {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    /*agregamos lineas*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  .header nav a:hover {
+    background-color: blueviolet;
+  }
+.Link{
+    margin: "0 10px";
+    color: "#fff";
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  opacity: 0;
+  z-index: 3;
+}
+.block{
+  position:absolute;
+  width: 20px;
+  height: 30px;
+  background: #4a4949;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.containerHeader{
+  position: relative;
+  z-index: 2;
+}
+
+.containerHeader nav{
+  z-index: 3;
+}

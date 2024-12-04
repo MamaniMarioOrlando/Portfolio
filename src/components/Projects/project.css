@@ -1,0 +1,53 @@
+.container{
+    background: linear-gradient(70deg, #00bcd4, #3f51b5, #2196f3, #00bcd4);
+    background-size: 400% 400%;
+    animation: gradient-animation 5s ease infinite;
+    color: white;
+    border-radius: 0.5rem;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .translucent-card{
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con 80% de transparencia */
+    color: black;
+  }
+  .imgCard{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transformación */
+
+  }
+  .imgCard:hover {
+    transform: scale(1.03); /* Agranda la imagen */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añade un efecto de sombra */
+  }
+  .text-card{
+    font-size: 0.7rem;
+  }
+  
+  .btn-primary {
+    --bs-btn-color: #fff; /* Color del texto */
+    --bs-btn-bg: #333333; /* Negro más claro como fondo */
+    --bs-btn-border-color: #333333; /* Borde igual al fondo */
+    --bs-btn-hover-color: #fff; /* Color del texto en hover */
+    --bs-btn-hover-bg: #000000; /* Negro puro como fondo en hover */
+    --bs-btn-hover-border-color: #000000; /* Borde negro puro en hover */
+    --bs-btn-focus-shadow-rgb: 51, 51, 51; /* Sombra negra más clara al enfocar */
+    --bs-btn-active-color: #fff; /* Color del texto al activar */
+    --bs-btn-active-bg: #1a1a1a; /* Negro intermedio al activar */
+    --bs-btn-active-border-color: #1a1a1a; /* Borde negro intermedio al activar */
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* Sombra interna al activar */
+    --bs-btn-disabled-color: #fff; /* Color del texto al deshabilitar */
+    --bs-btn-disabled-bg: #333333; /* Negro más claro al deshabilitar */
+    --bs-btn-disabled-border-color: #333333; /* Borde igual al fondo deshabilitado */
+    
+  }
+  
