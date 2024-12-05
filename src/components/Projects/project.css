@@ -17,23 +17,36 @@
       background-position: 0% 50%;
     }
   }
+  .accordion-transition .accordion-collapse { 
+    transition: height 0.5s ease;
+    } 
+  .accordion-transition .accordion-item { 
+    overflow: hidden;
+  }
   .translucent-card{
-    background-color: rgba(255, 255, 255, 0.8); /* Blanco con 80% de transparencia */
+    background-color: rgba(255, 255, 255, 0.8); 
     color: black;
+    transition: height 0.9s ease;
+  }
+  .translucent-card.expanded { 
+    height: auto; 
   }
   .imgCard{
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transformación */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   }
   .imgCard:hover {
-    transform: scale(1.03); /* Agranda la imagen */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añade un efecto de sombra */
+    transform: scale(1.03); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
   .text-card{
     font-size: 0.7rem;
   }
+
   
   .btn-primary {
+    margin-top: 1rem;
+ 
     --bs-btn-color: #fff; /* Color del texto */
     --bs-btn-bg: #333333; /* Negro más claro como fondo */
     --bs-btn-border-color: #333333; /* Borde igual al fondo */
@@ -50,4 +63,10 @@
     --bs-btn-disabled-border-color: #333333; /* Borde igual al fondo deshabilitado */
     
   }
-  
+  .technologies-list { 
+    display: flex;
+    gap: 10px; /* Espacio entre los iconos */ 
+  }
+   .technology-icon {
+    font-size: 1.5rem; /* Tamaño del icono */ 
+  }
