@@ -1,72 +1,102 @@
-.container{
-    background: linear-gradient(70deg, #00bcd4, #3f51b5, #2196f3, #00bcd4);
-    background-size: 400% 400%;
-    animation: gradient-animation 5s ease infinite;
-    color: white;
-    border-radius: 0.5rem;
-  }
+.container {
+  background: linear-gradient(70deg, #00bcd4, #3f51b5, #2196f3, #00bcd4);
+  background-size: 400% 400%;
+  animation: gradient-animation 5s ease infinite;
+  color: white;
+  border-radius: 0.5rem;
+}
 
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-  .accordion-transition .accordion-collapse { 
-    transition: height 0.5s ease;
-    } 
-  .accordion-transition .accordion-item { 
-    overflow: hidden;
+  50% {
+    background-position: 100% 50%;
   }
-  .translucent-card{
-    background-color: rgba(255, 255, 255, 0.8); 
-    color: black;
-    transition: height 0.9s ease;
+  100% {
+    background-position: 0% 50%;
   }
-  .translucent-card.expanded { 
-    height: auto; 
-  }
-  .imgCard{
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  }
-  .imgCard:hover {
-    transform: scale(1.03); 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-  }
-  .text-card{
-    font-size: 0.7rem;
-  }
+.accordion-transition .accordion-collapse {
+  transition: height 0.5s ease;
+}
 
-  
-  .btn-primary {
-    margin-top: 1rem;
- 
-    --bs-btn-color: #fff; /* Color del texto */
-    --bs-btn-bg: #333333; /* Negro más claro como fondo */
-    --bs-btn-border-color: #333333; /* Borde igual al fondo */
-    --bs-btn-hover-color: #fff; /* Color del texto en hover */
-    --bs-btn-hover-bg: #000000; /* Negro puro como fondo en hover */
-    --bs-btn-hover-border-color: #000000; /* Borde negro puro en hover */
-    --bs-btn-focus-shadow-rgb: 51, 51, 51; /* Sombra negra más clara al enfocar */
-    --bs-btn-active-color: #fff; /* Color del texto al activar */
-    --bs-btn-active-bg: #1a1a1a; /* Negro intermedio al activar */
-    --bs-btn-active-border-color: #1a1a1a; /* Borde negro intermedio al activar */
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* Sombra interna al activar */
-    --bs-btn-disabled-color: #fff; /* Color del texto al deshabilitar */
-    --bs-btn-disabled-bg: #333333; /* Negro más claro al deshabilitar */
-    --bs-btn-disabled-border-color: #333333; /* Borde igual al fondo deshabilitado */
-    
-  }
-  .technologies-list { 
-    display: flex;
-    gap: 10px; /* Espacio entre los iconos */ 
-  }
-   .technology-icon {
-    font-size: 1.5rem; /* Tamaño del icono */ 
-  }
+.accordion-transition .accordion-item {
+  overflow: hidden;
+}
+
+.translucent-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  transition: height 0.9s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.translucent-card.expanded {
+  height: auto;
+}
+
+.imgCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imgCard:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.text-card {
+  font-size: 0.7rem;
+}
+
+.btn-primary {
+  margin-top: 1rem;
+  align-self: center;
+  --bs-btn-color: #fff; /* Color del texto */
+  --bs-btn-bg: #333333; /* Fondo negro claro */
+  --bs-btn-border-color: #333333; /* Borde */
+  --bs-btn-hover-color: #fff; /* Color del texto en hover */
+  --bs-btn-hover-bg: #000000; /* Fondo negro puro en hover */
+  --bs-btn-hover-border-color: #000000; /* Borde negro puro en hover */
+  --bs-btn-focus-shadow-rgb: 51, 51, 51; /* Sombra al enfocar */
+  --bs-btn-active-color: #fff; /* Color del texto activado */
+  --bs-btn-active-bg: #1a1a1a; /* Fondo activado */
+  --bs-btn-active-border-color: #1a1a1a; /* Borde activado */
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* Sombra activada */
+  --bs-btn-disabled-color: #fff; /* Texto deshabilitado */
+  --bs-btn-disabled-bg: #333333; /* Fondo deshabilitado */
+  --bs-btn-disabled-border-color: #333333; /* Borde deshabilitado */
+}
+
+.github-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.github-button:hover {
+  background-color: cadetblue;
+}
+
+.technologies-list {
+  display: flex;
+  gap: 10px; /* Espacio entre íconos */
+}
+
+.technology-icon {
+  width: 30px; /* Tamaño fijo para el ancho */
+  height: 30px; /* Tamaño fijo para el alto */
+  object-fit: contain; /* Ajusta el ícono dentro del contenedor sin deformarlo */
+  display: block; /* Asegura consistencia */
+  padding: 0; /* Elimina espacio adicional */
+  margin: 0; /* Elimina márgenes */
+  box-sizing: border-box; /* Incluye padding y border en las dimensiones */
+}
+
+.technology-icon.css-icon {
+  transform: scale(0.85); /* Ajuste específico para el ícono CSS */
+}

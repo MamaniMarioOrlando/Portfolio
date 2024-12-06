@@ -11,9 +11,10 @@
 }
 h1 {
     
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 10px;
     text-align: center;
+    padding: 10px;
   }
   h2 {
     color: #f7f8fa;
@@ -22,6 +23,7 @@ h1 {
     border: 0.1rem solid;
     padding-left: 0.5rem;
     background-color: rgba(0,0,0,0.8);
+    padding: 10px;
   }
   p {
     color: aliceblue;
@@ -30,6 +32,7 @@ h1 {
     font-size: 1.3rem;
     background-color: rgba(0,0,0,0.8);
     padding: 1.3rem;
+    text-shadow:  black;
   }
   .highlight {
     color: #bec7ef;
